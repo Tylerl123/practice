@@ -1,0 +1,166 @@
+{
+	"quiz_one": [{
+			"id": 0,
+			"questionType": "multiple_choice",
+			"questionText": "Java is a(n) ______-oriented programming language",
+			"correctAnswer": "object",
+			"options": ["object", "subject", "logic", "quadratic"],
+			"feedback": "Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods)."
+		},
+		{
+			"id": 1,
+			"questionType": "multiple_choice",
+			"questionText": "Python is a(n) _______ high-level general-purpose programming language.",
+			"correctAnswer": "interpreted",
+			"options": ["interpolated", "mandated", "interpreted", "object-oriented"],
+			"feedback": "An interpreter is a computer program that directly executes instructions written in a programming or scripting language, without requiring them previously to have been compiled into a machine language program."
+		},
+		{
+			"id": 2,
+			"questionType": "multiple_choice",
+			"questionText": "In which platform is Java the most popular language in use?",
+			"correctAnswer": "GitHub",
+			"options": ["Instagram", "Facebook", "Stack Overflow", "GitHub"],
+			"feedback": "Instagram, Facebook are not programming/hosting platforms. Stack Overflow is a programming support site. GitHub is the guy for you."
+		},
+		{
+			"id": 3,
+			"questionType": "multiple_choice",
+			"questionText": "Java syntax is similar to ",
+			"correctAnswer": "C.",
+			"options": ["Python.", "C.", "Swift", "Ruby"],
+			"feedback": "The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them."
+		},
+		{
+			"id": 4,
+			"questionType": "multiple_choice",
+			"questionText": "Who is the father of the C language?",
+			"correctAnswer": "Dennis Ritchie",
+			"options": ["Steve Jobs", "Bill Gates", "Mark Zuckerberg", "Dennis Ritchie"],
+			"feedback": "A successor to the programming language B, C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to construct utilities running on Unix."
+		},
+		{
+			"id": 5,
+			"questionType": "true_false",
+			"questionText": "JDK is used to compile, debug and execute the java programs.",
+			"correctAnswer": "True",
+			"options": ["True", "False"],
+			"feedback": "The Java Development Kit (JDK), which is intended for software developers and includes development tools such as the Java compiler, Javadoc, Jar, and a debugger."
+		},
+		{
+			"id": 6,
+			"questionType": "true_false",
+			"questionText": "The java file extension is .py",
+			"correctAnswer": "False",
+			"options": ["True", "False"],
+			"feedback": "That is the file extension for a python file."
+		},
+		{
+			"id": 7,
+			"questionType": "true_false",
+			"questionText": "Python is case sensitive when dealing with identifiers",
+			"correctAnswer": "True",
+			"options": ["True", "False"],
+			"feedback": "Python is case sensitive when dealing with identifiers, so they won't get mixed up."
+		},
+		{
+			"id": 8,
+			"questionType": "true_false",
+			"questionText": "Class is a core data type in Python programming.",
+			"correctAnswer": "False",
+			"options": ["True", "False"],
+			"feedback": "Class is a user-defined data type."
+		},
+		{
+			"id": 9,
+			"questionType": "true_false",
+			"questionText": "The output of print(math.pow(3, 2)) is 9.0",
+			"correctAnswer": "True",
+			"options": ["True", "False"],
+			"feedback": "math.pow() returns a floating number (decimal)."
+		},
+		{
+			"id": 10,
+			"questionType": "text_input",
+			"questionText": "What is the truncation division operator in Python?",
+			"answerText": "answer_to_question",
+			"correctAnswer": "//",
+			"feedback": "// is truncated because it will only display the integer part of the quotient."
+		},
+		{
+			"id": 11,
+			"questionType": "text_input",
+			"questionText": "Type in the output of this: min(max(False,-3,-4), 2,7)",
+			"answerText": "answer_to_question",
+			"correctAnswer": "False",
+			"feedback": "The function max() is being used to find the maximum value from among -3, -4 and false. Since false amounts to the value zero, hence we are left with min(0, 2, 7) Hence the output is 0 (false)."
+		},
+		{
+			"id": 12,
+			"questionType": "text_input",
+			"questionText": "Fill in the blank. The package used for text formatting in Java programming language is java.____",
+			"answerText": "answer_to_question",
+			"correctAnswer": "text",
+			"feedback": "java.text allows formatting, searching and manipulating text."
+		},
+		{
+			"id": 13,
+			"questionType": "text_input",
+			"questionText": "Enter in the complied Java class file extension.",
+			"answerText": "answer_to_question",
+			"correctAnswer": ".class",
+			"feedback": "The compiled java files have .class extension."
+		},
+		{
+			"id": 14,
+			"questionType": "text_input",
+			"questionText": "Enter in which environment variable is used to set the java path.",
+			"answerText": "answer_to_question",
+			"correctAnswer": "JAVA_HOME",
+			"feedback": "JAVA_HOME is used to store a path to the java installation."
+		},
+		{
+			"id": 15,
+			"questionType": "multiple_choice",
+			"questionText": "Which of the following is not a segment of memory in java?",
+			"correctAnswer": "Register Segment",
+			"options": ["Code Segment", "Register Segment", "Heap Segment", "Stack Segment"],
+			"feedback": "There are only 3 types of memory segment. Stack Segment, Heap Segment and Code Segment."
+		},
+		{
+			"id": 16,
+			"questionType": "multiple_choice",
+			"questionText": "Which exception is thrown when java is out of memory?",
+			"correctAnswer": "OutOfMemoryError",
+			"options": ["OutOfMemoryError", "MemoryOutOfBoundsException", "MemoryFullException", "NoMemoryError"],
+			"feedback": "The Xms flag has no default value, and Xmx typically has a default value of 256MB. A common use for these flags is when you encounter a java.lang.OutOfMemoryError."
+		},
+		{
+			"id": 17,
+			"questionType": "multiple_choice",
+			"questionText": "Which of these cannot be used for a variable name in Java?",
+			"correctAnswer": "keyword",
+			"options": ["identifier and keyword", "identifier", "keyword", "container"],
+			"feedback": "Keywords are specially reserved words that can not be used for naming a user defined variable, for example: class, int, for, etc."
+		},
+		{
+			"id": 18,
+			"questionType": "multiple_choice",
+			"questionText": "Which of the following is a type of polymorphism in Java Programming?",
+			"correctAnswer": "Compile time polymorphism",
+			"options": ["Multilevel polymorphism", "Multiple polymorphism", "Execution time polymorphism", "Compile time polymorphism"],
+			"feedback": "There are two types of polymorphism in Java. Compile time polymorphism (overloading) and runtime polymorphism (overriding)."
+		},
+		{
+			"id": 19,
+			"questionType": "multiple_choice",
+			"questionText": "Which of these coding types is used for data type characters in Java?",
+			"correctAnswer": "UNICODE",
+			"options": ["ASCII", "UNICODE", "ISO-LATIN-1", "CHEF"],
+			"feedback": "Unicode defines fully international character set that can represent all the characters found in all human languages. Its range is from 0 to 65536."
+		}
+
+
+	]
+
+}
