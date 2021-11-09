@@ -1,166 +1,164 @@
 {
-	"quiz_one": [{
-			"id": 0,
-			"questionType": "multiple_choice",
-			"questionText": "Java is a(n) ______-oriented programming language",
-			"correctAnswer": "object",
-			"options": ["object", "subject", "logic", "quadratic"],
-			"feedback": "Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods)."
-		},
-		{
-			"id": 1,
-			"questionType": "multiple_choice",
-			"questionText": "Python is a(n) _______ high-level general-purpose programming language.",
-			"correctAnswer": "interpreted",
-			"options": ["interpolated", "mandated", "interpreted", "object-oriented"],
-			"feedback": "An interpreter is a computer program that directly executes instructions written in a programming or scripting language, without requiring them previously to have been compiled into a machine language program."
-		},
-		{
-			"id": 2,
-			"questionType": "multiple_choice",
-			"questionText": "In which platform is Java the most popular language in use?",
-			"correctAnswer": "GitHub",
-			"options": ["Instagram", "Facebook", "Stack Overflow", "GitHub"],
-			"feedback": "Instagram, Facebook are not programming/hosting platforms. Stack Overflow is a programming support site. GitHub is the guy for you."
-		},
-		{
-			"id": 3,
-			"questionType": "multiple_choice",
-			"questionText": "Java syntax is similar to ",
-			"correctAnswer": "C.",
-			"options": ["Python.", "C.", "Swift", "Ruby"],
-			"feedback": "The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them."
-		},
-		{
-			"id": 4,
-			"questionType": "multiple_choice",
-			"questionText": "Who is the father of the C language?",
-			"correctAnswer": "Dennis Ritchie",
-			"options": ["Steve Jobs", "Bill Gates", "Mark Zuckerberg", "Dennis Ritchie"],
-			"feedback": "A successor to the programming language B, C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to construct utilities running on Unix."
-		},
-		{
-			"id": 5,
-			"questionType": "true_false",
-			"questionText": "JDK is used to compile, debug and execute the java programs.",
-			"correctAnswer": "True",
-			"options": ["True", "False"],
-			"feedback": "The Java Development Kit (JDK), which is intended for software developers and includes development tools such as the Java compiler, Javadoc, Jar, and a debugger."
-		},
-		{
-			"id": 6,
-			"questionType": "true_false",
-			"questionText": "The java file extension is .py",
-			"correctAnswer": "False",
-			"options": ["True", "False"],
-			"feedback": "That is the file extension for a python file."
-		},
-		{
-			"id": 7,
-			"questionType": "true_false",
-			"questionText": "Python is case sensitive when dealing with identifiers",
-			"correctAnswer": "True",
-			"options": ["True", "False"],
-			"feedback": "Python is case sensitive when dealing with identifiers, so they won't get mixed up."
-		},
-		{
-			"id": 8,
-			"questionType": "true_false",
-			"questionText": "Class is a core data type in Python programming.",
-			"correctAnswer": "False",
-			"options": ["True", "False"],
-			"feedback": "Class is a user-defined data type."
-		},
-		{
-			"id": 9,
-			"questionType": "true_false",
-			"questionText": "The output of print(math.pow(3, 2)) is 9.0",
-			"correctAnswer": "True",
-			"options": ["True", "False"],
-			"feedback": "math.pow() returns a floating number (decimal)."
-		},
-		{
-			"id": 10,
-			"questionType": "text_input",
-			"questionText": "What is the truncation division operator in Python?",
-			"answerText": "answer_to_question",
-			"correctAnswer": "//",
-			"feedback": "// is truncated because it will only display the integer part of the quotient."
-		},
-		{
-			"id": 11,
-			"questionType": "text_input",
-			"questionText": "Type in the output of this: min(max(False,-3,-4), 2,7)",
-			"answerText": "answer_to_question",
-			"correctAnswer": "False",
-			"feedback": "The function max() is being used to find the maximum value from among -3, -4 and false. Since false amounts to the value zero, hence we are left with min(0, 2, 7) Hence the output is 0 (false)."
-		},
-		{
-			"id": 12,
-			"questionType": "text_input",
-			"questionText": "Fill in the blank. The package used for text formatting in Java programming language is java.____",
-			"answerText": "answer_to_question",
-			"correctAnswer": "text",
-			"feedback": "java.text allows formatting, searching and manipulating text."
-		},
-		{
-			"id": 13,
-			"questionType": "text_input",
-			"questionText": "Enter in the complied Java class file extension.",
-			"answerText": "answer_to_question",
-			"correctAnswer": ".class",
-			"feedback": "The compiled java files have .class extension."
-		},
-		{
-			"id": 14,
-			"questionType": "text_input",
-			"questionText": "Enter in which environment variable is used to set the java path.",
-			"answerText": "answer_to_question",
-			"correctAnswer": "JAVA_HOME",
-			"feedback": "JAVA_HOME is used to store a path to the java installation."
-		},
-		{
-			"id": 15,
-			"questionType": "multiple_choice",
-			"questionText": "Which of the following is not a segment of memory in java?",
-			"correctAnswer": "Register Segment",
-			"options": ["Code Segment", "Register Segment", "Heap Segment", "Stack Segment"],
-			"feedback": "There are only 3 types of memory segment. Stack Segment, Heap Segment and Code Segment."
-		},
-		{
-			"id": 16,
-			"questionType": "multiple_choice",
-			"questionText": "Which exception is thrown when java is out of memory?",
-			"correctAnswer": "OutOfMemoryError",
-			"options": ["OutOfMemoryError", "MemoryOutOfBoundsException", "MemoryFullException", "NoMemoryError"],
-			"feedback": "The Xms flag has no default value, and Xmx typically has a default value of 256MB. A common use for these flags is when you encounter a java.lang.OutOfMemoryError."
-		},
-		{
-			"id": 17,
-			"questionType": "multiple_choice",
-			"questionText": "Which of these cannot be used for a variable name in Java?",
-			"correctAnswer": "keyword",
-			"options": ["identifier and keyword", "identifier", "keyword", "container"],
-			"feedback": "Keywords are specially reserved words that can not be used for naming a user defined variable, for example: class, int, for, etc."
-		},
-		{
-			"id": 18,
-			"questionType": "multiple_choice",
-			"questionText": "Which of the following is a type of polymorphism in Java Programming?",
-			"correctAnswer": "Compile time polymorphism",
-			"options": ["Multilevel polymorphism", "Multiple polymorphism", "Execution time polymorphism", "Compile time polymorphism"],
-			"feedback": "There are two types of polymorphism in Java. Compile time polymorphism (overloading) and runtime polymorphism (overriding)."
-		},
-		{
-			"id": 19,
-			"questionType": "multiple_choice",
-			"questionText": "Which of these coding types is used for data type characters in Java?",
-			"correctAnswer": "UNICODE",
-			"options": ["ASCII", "UNICODE", "ISO-LATIN-1", "CHEF"],
-			"feedback": "Unicode defines fully international character set that can represent all the characters found in all human languages. Its range is from 0 to 65536."
-		}
-
-
-	]
-
+    "questions": [
+        {
+            "questionType" : "true_false",
+            "questionText" : "Python uses curly-brackets to define scope.",
+            "options" : ["True", "False"],
+            "correctAnswer" : "False",
+            "explanation" : "Python relies on indentation and whitespace to define scope, unlike other programming languages that often use curly brackets."
+        },
+        {
+            "questionType" : "multiple_choice",
+            "questionText" : "What is the correct way to create a single-line comment in Python?",
+            "options" : [
+                "#",
+                "//",
+                "<!-- -->",
+                "/*"
+            ],
+            "correctAnswer" : "#",
+            "explanation" : "Python utilizes the # symbol to create a single-line comment."
+        },
+        {
+            "questionType" : "text_input",
+            "questionText" : "Write the correct statement to print \"Hello!\" in Python",
+            "correctAnswer" : "print(\"Hello!\")",
+            "explanation" : "The print() method call is used to print in Python and there are no trailing semi-colons."
+        },
+        {
+            "questionType" : "multiple_choice",
+            "questionText" : "Which of the following is NOT a legal variable name in Python?",
+            "options" : [
+                "first_name",
+                "_firstname",
+                "first-name",
+                "FIRSTNAME"
+            ],
+            "correctAnswer" : "first-name",
+            "explanation" : "In Python variable names, only alpha-numeric characters and underscores are allowed (no hypens)."
+        },
+        {
+            "questionType" : "fill_blank",
+            "questionText" : "Complete the following Python code to cast 2.5 as an integer.",
+            "displayText" : "___(2.5)",
+            "correctAnswer" : "int",
+            "explanation" : "The Python int() method can be used to return an int object from any number or string."
+        },
+        {
+            "questionType" : "fix_error",
+            "questionText" : "Fix this Python code to print the second character of the string 'Hello':",
+            "displayText" : "print('Hello'[])",
+            "correctAnswer" : "print('Hello'[1])",
+            "explanation" : "Python strings can be iterated through using indexing. Since the first character has an index of 0, you would use [1] to grab the second character."
+        },
+        {
+            "questionType" : "multiple_choice",
+            "questionText" : "Which of the following is NOT an example of a Python data-type?",
+            "options" : [
+                "str",
+                "int",
+                "complex",
+                "double"
+            ],
+            "correctAnswer" : "double",
+            "explanation" : "In Python, decimal numbers have a data type of 'float' not 'double'."
+        },
+        {
+            "questionType" : "true_false",
+            "questionText" : "The Python statement print(14/3) will display 4.",
+            "options" : ["True","False"],
+            "correctAnswer" : "False",
+            "explanation" : "Python's / operator retains floating decimal values when dividing while // is used for floor division."
+        },
+        {
+            "questionType" : "text_input",
+            "questionText" : "Write Python code to print the number of elements in myList where myList = [1,2,3,4]",
+            "correctAnswer" : "print(len(myList))",
+            "explanation" : "The len() method in Python is used to find the number of elements in a list."
+        },
+        {
+            "questionType" : "true_false",
+            "questionText" : "A Tuple is a Python data type that is ordered and mutable.",
+            "options" : ["True","False"],
+            "correctAnswer" : "False",
+            "explanation" : "A Python tuple is immutable meaning the elements stored within cannot be changed."
+        },
+        {
+            "questionType" : "multiple_choice",
+            "questionText" : "What Python data type is characterized as being unordered and immutable?",
+            "options" : [
+                "List",
+                "Set",
+                "Tuple",
+                "Dictionary"
+            ],
+            "correctAnswer" : "Set",
+            "explanation" : "The Set data type in Python is immutable like a tuple but differs in that it is also unordered (thus prohibiting the use of indexing)."
+        },
+        {
+            "questionType" : "fill_blank",
+            "questionText" : "Complete the following Python code to execute a for loop a total of 5 times:",
+            "displayText" : "for i in range(1,_):",
+            "correctAnswer" : "6",
+            "explanation" : "Using the range(a,b) method with a for loop can be used to iterate on each number in the set of (a,b].\nCalling range(1,6) would iterate a total of five times; once each on the numbers in the set {1, 2, 3, 4, 5} (6 is excluded)."
+        },
+        {
+            "questionType" : "text_input",
+            "questionText" : "What Python method is used to collect/store user input?",
+            "correctAnswer" : "input()",
+            "explanation" : "A Python statement such as name=input(\"What is your name?\") will wait for a user input and store that in the 'name' variable."
+        },
+        {
+            "questionType" : "true_false",
+            "questionText" : "The Python foreach loop can be used to iterate on every element within a list.",
+            "options" : ["True", "False"],
+            "correctAnswer" : "False",
+            "explanation" : "Python does not have a foreach loop but instead allows that functionality using a regular for loop such as 'for element in myList:'"
+        },
+        {
+            "questionType" : "multiple_choice",
+            "questionText" : "What is returned by the following Python statement: return (12<30)",
+            "options" : [
+                "False",
+                "\"True\"",
+                "True",
+                "true"                
+            ],
+            "correctAnswer" : "True",
+            "explanation" : "Since 12 is less than 30, the Python statement would return the boolean True (quotation marks are used to specify strings)."
+        },
+        {
+            "questionType" : "fill_blank",
+            "questionText" : "Complete the following python code to define a Python function named myFunc:",
+            "displayText" : "___ myFunc():\n\tprint(\"Hello\")",
+            "correctAnswer" : "def",
+            "explanation" : "The def keyword in Python is used to define new functions."
+        },
+        {
+            "questionType" : "text_input",
+            "questionText" : "What Python statement is used to escape from a loop?",
+            "correctAnswer" : "break",
+            "explanation" : "The break keyword in Python is used to escape from loops."
+        },
+        {
+            "questionType" : "true_false",
+            "questionText" : "Using a break statement within a nested loop will escape out of the entire loop structure.",
+            "options" : ["True","False"],
+            "correctAnswer" : "False",
+            "explanation" : "Using a break statement within a nested loop will only escape from the most immediate loop it was called in. It is possible to break out of an inner loop while remaining within the outer loop."
+        },
+        {
+            "questionType" : "true_false",
+            "questionText" : "The pass keyword in Python is used to stop the current iteration and continue with the next.",
+            "options" : ["True","False"],
+            "correctAnswer" : "False",
+            "explanation" : "The pass keyword in Python essentially tells the program to 'do nothing'. The continue keyword would be used to stop the current iteration but carry on with the next."
+        },
+        {
+            "questionType" : "text_input",
+            "questionText" : "To change a globally defined variable 'x' within a new function, this line must be written before interacting with x:",
+            "correctAnswer" : "global x",
+            "explanation" : "The global keyword is used within Python functions to specify that the proceeding variable already exists in the global scope. Without this keyword, declaring/assigning a variable would create it in the function's local scope and not change the value of that in the global scope."
+        }
+    ]
 }
