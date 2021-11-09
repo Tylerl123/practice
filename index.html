@@ -1,46 +1,58 @@
+<!-- index.html  main page of our SPA-->
 <html>
   <head>
     <!-- include bootstap dependencies -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
     <!-- Include handlebars library -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-
+    <link rel="stylesheet" href="css/mycss_web.css">
     <!-- Script for our application  -->
-    <link rel="stylesheet" href="styles.css"/>
-    <script src="scripts.js"> </script>
+    <script src="quiz.js"> </script>
 
   </head>
-  <body>
-    <div id="widget_view">
+  <body id="body_style">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+      <a class="navbar-brand" href="https://rbakar18.github.io/Assignment-03/">Quiz App</a>
+      </div>
+      <div id="Timer">
+        <span>Time Elapsed:</span>
+        <span id="minutes">00</span>:<span id="seconds">00</span>
+      </div>
+    </nav>
+
+    <div id="widget_view" style="margin:50px">
+
     </div>
+
   </body>
 
-
-
   <script id="intro_view" type="text/x-handlebars-template">
-    <div class="jumbotron text-center" style="background-color:#202124; margin-bottom: 0px">
-      <h1 style="font-family:Century Gothic">Quiz Selection</h1>
-    </div>
-      <div class="text-center">
-          <label for = "name" style="font-family:Century Gothic"> Name: </label> <input id = "name" placeholder="Please type enter a name" type="text">
-          <button id="submit-btn" onclick="f1() " data-action="{{this.action}}">{{this.action}}</button>
-      </div>
-      <div style= "margin-top: 50px">
-        <div class="button-wrap">
-          <p class="lead">Select a Quiz:</p>
-          <input class ="hidden radio-label" type="radio" onclick="f1()"name="quiz1" id = "quiz1">
-          <label class = "button-label" for="quiz1">
-            Quiz 1
-          </label>
-          <input class ="hidden radio-label" type="radio" onclick="f1()" name="quiz1" id = "quiz2">
-          <label class = "button-label" for="quiz2">
-            Quiz 2
-          </label>
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <div>
+              <!--button class="btn btn-danger float-right" name="quiz_name" data-action="{{this.action}}">Quiz 1</button>
+              <button class="btn btn-primary float-right"name="quiz_name" data-action="{{this.action}}">Quiz 2</button-->
+              <input type="text" id="userName" name = "fname" placeholder="Enter your first name:">
+              <div> Please choose a quiz: </div>
+              <button class="btn btnsz btn1 btn-danger float-right" data-action="{{this.action}}">{{this.action}}</button>
+
+              <input type="radio" id="quiz_one" name="quiz_name" value="quiz_one"required>
+                   <label for="quiz_one">Quiz 1</label>
+              <input type="radio" id="quiz_one" name="quiz_name" value="quiz_one"required>
+                  <label for="quiz_one">Quiz 2</label>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
   </script>
@@ -49,40 +61,41 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p>Questions Answered: <span id="correctCount"></span> || Current Score: <span id="incorrectCount"></span>%</p>
+            <p>Question Number: <span id="numcorrect"></span> <br>Current Score: <span id="numincorrect"></span>%</p>
+            <h2></h2>
         </div>
       </div>
-      <div class="justify-center flex-column">
-        <h2 id="question">{{this.questionText}}</h2>
-        <div class="choice">
-          <p class="prefix">A</p>
-          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
-        </div>
-        <div class="choice">
-          <p class="prefix">B</p>
-          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
-        </div>
-        <div class="choice">
-          <p class="prefix">C</p>
-          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</button>
-        </div>
-        <div class="choice">
-          <p class="prefix">D</p>
-          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[3]}}">{{this.options.[3]}}</button>
+      <div class="row">
+          <div class="col">
+            <div>
+              <span style="text-align:center">{{this.questionText}}</span><br>
+              <div>
+                <input type="radio" id="{{this.options.[0]}}" data-action="answer" data-answer="{{this.options.[0]}}" value="{{this.options.[0]}}" name="choice">{{this.options.[0]}}<br>
+                <input type="radio" id="{{this.options.[1]}}" data-action="answer" data-answer="{{this.options.[1]}}" value="{{this.options.[1]}}" name="choice">{{this.options.[1]}}<br>
+                <input type="radio" id="{{this.options.[2]}}" data-action="answer" data-answer="{{this.options.[2]}}" value="{{this.options.[2]}}" name="choice">{{this.options.[2]}}<br>
+                <input type="radio" id="{{this.options.[3]}}" data-action="answer" data-answer="{{this.options.[3]}}" value="{{this.options.[3]}}" name="choice">{{this.options.[3]}}<br>
+              </div>
+              <!--button class="btn bg-dark text-white float-right" data-action="submit">Submit Answer</button-->
+          </div>
         </div>
       </div>
-    </div>
+  </div>
   </script>
-
 
   <script id="question_view_true_false" type="text/x-handlebars-template">
     <div class="container">
-      <div class="justify-center flex-column">
+      <div class="row">
+        <div class="col">
+            <p>Question Number: <span id="numcorrect"></span> <br>Current Score: <span id="numincorrect"></span>%</p>
+            <h2></h2>
+        </div>
+      </div>
+      <div class="row">
           <div class="col">
             <div>
-              <h2 id="question"> {{this.questionText}}</h2>
-              <button class="button-label" id="choice" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
-              <button class="button-label" id="choice" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+              <span style="text-align:center"> {{this.questionText}}</span>
+              <button class="btn btn-primary pull-left" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
+              <button class="btn btn-danger float-right" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
             </div>
           </div>
         </div>
@@ -92,10 +105,16 @@
   <script id="question_view_text_input" type="text/x-handlebars-template">
     <div class="container">
       <div class="row">
+        <div class="col">
+            <p>Question Number: <span id="numcorrect"></span> <br>Current Score: <span id="numincorrect"></span>%</p>
+            <h2></h2>
+        </div>
+      </div>
+      <div class="row">
           <div class="col">
             <div>
               <span style="text-align:center"> {{this.questionText}} </span>
-              <input type="text" id="{{this.answerFieldId}}" name="answer"><br><br>
+              <input type="text" id="{{this.answerText}}" name="answer"><br><br>
               <button class="btn btn-danger float-right" data-action="submit">Submit</button>
             </div>
           </div>
@@ -103,74 +122,58 @@
       </div>
   </script>
 
-  <script id="question_view_multiple_correct" type="text/x-handlebars-template">
+  <script id="answer_correct_feedback_view" type="text/x-handlebars-template">
     <div class="container">
       <div class="row">
           <div class="col">
             <div>
-              <h2>{{this.questionText}}</h2>
-              <input type="checkbox" name="checkbox" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}
-              <input type="checkbox" name="checkbox" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}
-              <input type="checkbox" name="checkbox" data-action="answer" data-answer="{{this.options.[2]}}">{{this.options.[2]}}
-              <input type="checkbox" name="checkbox" data-action="answer" data-answer="{{this.options.[3]}}">{{this.options.[3]}}
-              <button class="btn btn-danger float-right" data-action="submit">Submit</button>
+              <span id="feedback_string">That's right!</span>
             </div>
           </div>
         </div>
       </div>
   </script>
 
-  <script id="question_view_image_labelling" type="text/x-handlebars-template">
+  <script id="answer_incorrect_feedback_view" type="text/x-handlebars-template">
     <div class="container">
       <div class="row">
           <div class="col">
             <div>
-              <h2 style="text-align:center"> {{this.questionText}} </h2>
-              <img style="text-align:center"> {{this.image}}>
-              <input type="text" id="{{this.answerFieldId}}" name="answer"><br><br>
-              <button class="btn btn-danger float-right" data-action="submit">Submit</button>
+              <span id="feedback_string">Nope :(</span>
             </div>
           </div>
         </div>
       </div>
   </script>
 
-
-  <script id="feedback_view_correct" type="text/x-handlebars-template">
+<script id="end_view" type="text/x-handlebars-template">
     <div class="container">
+      <div class="row">
+        <div class="col">
+            <p>Question Number: <span id="numcorrect"></span> <br>Current Score: <span id="numincorrect"></span>%</p>
+            <h2></h2>
+        </div>
+      </div>
       <div class="row">
           <div class="col">
             <div>
-              <span id="feedback_string"> Good work! </span>
+              <h1 id="end_message"></h1>
             </div>
           </div>
         </div>
       </div>
   </script>
 
-  <script id="feedback_view_incorrect" type="text/x-handlebars-template">
+  <!--script id="explanation_view" type="text/x-handlebars-template">
     <div class="container">
       <div class="row">
           <div class="col">
             <div>
-              <span id="feedback_string"> Wrong! </span>
+              <span id="explanation_string">{{this.explanation}}</span><br><br><br>
+              <button onclick="closeExplanation()" class="btn bg-dark text-white float-right">Ok</button>
             </div>
           </div>
         </div>
       </div>
-  </script>
-
-  <script id="end_view" type="text/x-handlebars-template">
-      <div class="container">
-        <div class="row">
-            <div class="col">
-              <div>
-                <span id=finalMessage></span>
-                <button class="btn btn-danger float-right" data-action="intro_view">Home Page</button>
-                <button class="btn btn-danger float-right" data-action="start_again">Re-take Quiz</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </script>
+  </script-->
 </html>
